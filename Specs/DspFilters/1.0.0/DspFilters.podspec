@@ -10,7 +10,11 @@ Pod::Spec.new do |s|
   s.source       = {:git => "https://github.com/vinniefalco/DSPFilters.git", :commit => "6f2c1e3daf20b04eccc48166f8dff70213ac96f3" }
   s.source_files = ['shared/DSPFilters/include/DspFilters/*.h','shared/DSPFilters/source/*']
   s.requires_arc = false
-  s.xcconfig = {
+  s.pod_target_xcconfig = {
+    'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
+    'CLANG_CXX_LIBRARY' => 'libc++'
+  }
+  s.user_target_xcconfig = {
     'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
     'CLANG_CXX_LIBRARY' => 'libc++'
   }
