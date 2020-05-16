@@ -14,9 +14,4 @@ Pod::Spec.new do |s|
     'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
     'CLANG_CXX_LIBRARY' => 'libc++'
   }
-  s.user_target_xcconfig = {
-    'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
-    'CLANG_CXX_LIBRARY' => 'libc++'
-  }
-  s.compiler_flags = '-stdlib=libc++'
 end
